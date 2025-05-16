@@ -1,0 +1,23 @@
+use sakila;
+show tables;
+select * from actor;
+select * from actor where first_name = 'ED' and actor_id>100 ;
+select * from actor where first_name = 'ED' or actor_id>100 ;
+select * from actor where actor_id>10 and actor_id<25;
+select * from actor where actor_id between 11 and 25;
+select * from actor where actor_id in (2,5,700000);
+select * from actor where first_name like 's%t';
+
+select * from actor where first_name like 'ED%';
+select * from actor where first_name like 'E_';
+select * from actor where first_name like '_A%';
+select * from actor where first_name like 'ED%';
+select * from actor where first_name like 'ED%';
+select * from actor where actor_id =3 or actor_id = 5 or actor_id = 7;
+select * from actor where actor_id <7 and actor_id>3;
+select * from actor where actor_id not  between 3 and 100;
+select * from actor where first_name like '_E%R';
+select * from actor where first_name like '%NN%';
+select * from actor where first_name like '_' and last_name like '%s_';
+select * from actor where first_name like '___';
+select * from actor where first_name like'A%T%h_';
